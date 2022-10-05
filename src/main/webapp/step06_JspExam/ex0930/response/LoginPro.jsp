@@ -32,10 +32,10 @@
         // 근데 한글이 깨짐 그래서 넣고자 하는 값에 URLEncoder.encode(userName, "UTF-8") 이렇게 해줌
         response.sendRedirect("LoginOk.jsp?userName=" + URLEncoder.encode(userName, "UTF-8"));
 
-        // forward방식중 메소드 => forward방식은 정보를 유지하면서 갈때 쓰면 좋음
+        // forward방식중 메소드 => forward방식은 정보를 유지하면서 갈때 쓰면 좋음 ( 얘는 페이지가 안바뀜 )
 //        request.getRequestDispatcher("LoginOk.jsp").forward(request, response);
     } else {
-// response.sendRedirect("LoginForm.html"); 얘가 먼저 실행되기 때문에 아래 script메시지가 실행이 안됨 따라서 이렇게 같이 쓸 수 없음
+// response.sendRedirect("LoginForm.jsp"); 얘가 먼저 실행되기 때문에 아래 script메시지가 실행이 안됨 따라서 이렇게 같이 쓸 수 없음
 // 만약 같이 쓰려면 이동방식을 html이동방식으로 바꿔야됨
 %>
 <script type = "text/javascript">
@@ -48,11 +48,11 @@ alert(`<%=userName%> 님 아이디 또는 비번을 확인해주세요`);
 <%--alert(<%=userName%> + "님 아이디 또는 비번을 확인해주세요");--%>
 
 // html이동방식
-// location.href = "LoginForm.html"; // 얘는 그냥 새로운 페이지가 다시 나오는거라 정보가 안남아있음
+// location.href = "LoginForm.jsp"; // 얘는 그냥 새로운 페이지가 다시 나오는거라 정보가 안남아있음
 history.back(); // 뒤로가기 얘는 이전에 정보가 남아있음(비밀번호빼고)(근데 내껀나옴)
 </script>
 <%
-//        response.sendRedirect("LoginForm.html");
+//        response.sendRedirect("LoginForm.jsp");
     }
 
 %>

@@ -13,9 +13,5 @@
 <body>
 <h3>footer.jsp입니다</h3>
 <h4> 주소 : <%=addr%></h4>
-
-
-
-
 </body>
 </html>

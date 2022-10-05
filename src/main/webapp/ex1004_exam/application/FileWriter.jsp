@@ -29,7 +29,7 @@
 
 //  작성자이름_시간.txt 으로 저장 - 작성자이름_System.currentTimeMillis() + ".txt"
 
-    String path = application.getRealPath("/ex1004_exam/application/save");
+    String path = application.getRealPath("/ex1004_exam/application/save/");
 
     String url = "/Users/nonoro/JspServlet/src/main/webapp/ex1004_exam/application/save/" + name + "_" + time + ".txt";
 //    String url = path + name + "_" + time + ".txt";

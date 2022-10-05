@@ -15,6 +15,8 @@
 
 <%@ include file="top.jsp"%>
 
+<hr color="tomato">
+
 <%
     String addr = "서울시 송파구";
 %>

@@ -30,6 +30,7 @@ int sum = 0;
   out.print("alert('글쎄?');");
   out.print("</script>");*/
 %>
+
 <%-- 이렇게하고 forwardTest를 실행하면 화면은 forwardResult 화면이 뜨면서 거기에 sum값이 나옴--%>
 <%-- forward는 현재 이 forwardTest를 실행시킨 창에서 내가 page에 준 경로의 파일을열어서 보여주는 기능--%>
 <%-- 여기서 지금 즐거운주말이라는 메시지는 인코딩이 utf-8이 아니라서 ??로 감
